@@ -1,0 +1,283 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Predicciones Mundial 2026</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+	<!-- Estilo personal -->
+	<link rel="stylesheet" href="css/style.css?v=6">
+
+</head>
+	<body>
+		<div id="menu"></div>
+
+		
+
+  <main class="container pt-4">
+
+    <!-- FILTROS -->
+    <section class="card hero shadow-sm border-0 mb-4">
+      <div class="card-body">
+        <div class="row g-3">
+
+          <!-- Buscar -->
+          <div class="col-md-5">
+            <div class="input-group">
+              <span class="input-group-text bg-white">
+                <i class="bi bi-search"></i>
+              </span>
+              <input type="text" class="form-control" placeholder="Buscar equipo o partido...">
+            </div>
+          </div>
+
+          <!-- Grupo -->
+          <div class="col-md-4">
+            <select class="form-select">
+              <option selected>Todos los grupos</option>
+              <option>Grupo A</option>
+              <option>Grupo B</option>
+              <option>Grupo C</option>
+            </select>
+          </div>
+
+          <!-- Botón limpiar -->
+          <div class="col-md-3">
+            <button class="btn btn-outline-secondary w-100">
+              <i class="bi bi-sliders me-2"></i> Limpiar filtros
+            </button>
+          </div>
+
+          <!-- Sede -->
+          <div class="col-md-4">
+            <div class="input-group">
+              <span class="input-group-text bg-white">
+                <i class="bi bi-geo-alt"></i>
+              </span>
+              <select class="form-select">
+                <option selected>Todas las sedes</option>
+                <option>Estadio Azteca</option>
+                <option>SoFi Stadium</option>
+                <option>MetLife Stadium</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Fecha -->
+          <div class="col-md-4">
+            <div class="input-group">
+              <span class="input-group-text bg-white">
+                <i class="bi bi-calendar-event"></i>
+              </span>
+              <select class="form-select">
+                <option selected>Todas las fechas</option>
+                <option>11 de junio, 2026</option>
+                <option>12 de junio, 2026</option>
+                <option>16 de junio, 2026</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Equipo -->
+          <div class="col-md-4">
+            <div class="input-group">
+              <span class="input-group-text bg-white">
+                <i class="bi bi-people"></i>
+              </span>
+              <select class="form-select">
+                <option selected>Todos los equipos</option>
+                <option>México</option>
+                <option>Canadá</option>
+                <option>Brasil</option>
+              </select>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TARJETAS DE PARTIDOS -->
+    <section class="row g-4">
+
+      <!-- Partido 1 -->
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm partido-card">
+          <div class="card-header text-center border-0 py-3">
+            <div class="d-flex justify-content-between align-items-center px-3 partido-header">
+              <span class="fw-bold text-uppercase text-light">MÉXICO</span>
+              <span class="vs-icon">VS</span>
+              <span class="fw-bold text-uppercase text-light">CANADÁ</span>
+            </div>
+          </div>
+          <div class="card-body pt-2">
+            <p class="mb-2">
+              <i class="bi bi-calendar-event me-2"></i>
+              Fecha: 11 de junio, 2026 &nbsp; | &nbsp; Hora: 17:00
+            </p>
+            <p class="mb-3">
+              <i class="bi bi-geo-alt me-2"></i>
+              Sede: Estadio Azteca, México
+            </p>
+            <a href="votar.html" class="btn btn-outline-primary w-100 fw-semibold">VOTAR</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Partido 2 -->
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm partido-card">
+          <div class="card-header text-center border-0 py-3">
+            <div class="d-flex justify-content-between align-items-center px-3 partido-header">
+              <span class="fw-bold text-uppercase text-light">USA</span>
+              <span class="vs-icon">VS</span>
+              <span class="fw-bold text-uppercase text-light">BRASIL</span>
+            </div>
+          </div>
+          <div class="card-body pt-2">
+            <p class="mb-2">
+              <i class="bi bi-calendar-event me-2"></i>
+              Fecha: 12 de junio, 2026 &nbsp; | &nbsp; Hora: 19:00
+            </p>
+            <p class="mb-3">
+              <i class="bi bi-geo-alt me-2"></i>
+              Sede: SoFi Stadium, USA
+            </p>
+            <a href="votar.html" class="btn btn-outline-primary w-100 fw-semibold">VOTAR</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Partido 3 -->
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm partido-card">
+          <div class="card-header text-center border-0 py-3">
+            <div class="d-flex justify-content-between align-items-center px-3 partido-header">
+              <span class="fw-bold text-uppercase text-light">ARGENTINA</span>
+              <span class="vs-icon">VS</span>
+              <span class="fw-bold text-uppercase text-light">COLOMBIA</span>
+            </div>
+          </div>
+          <div class="card-body pt-2">
+            <p class="mb-2">
+              <i class="bi bi-calendar-event me-2"></i>
+              Fecha: 16 de junio, 2026 &nbsp; | &nbsp; Hora: 18:00
+            </p>
+            <p class="mb-3">
+              <i class="bi bi-geo-alt me-2"></i>
+              Sede: MetLife Stadium, USA
+            </p>
+            <a href="votar.html" class="btn btn-outline-primary w-100 fw-semibold">VOTAR</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Partido 4 -->
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm partido-card">
+          <div class="card-header text-center border-0 py-3">
+            <div class="d-flex justify-content-between align-items-center px-3 partido-header">
+              <span class="fw-bold text-uppercase text-light">ALEMANIA</span>
+              <span class="vs-icon">VS</span>
+              <span class="fw-bold text-uppercase text-light">JAPÓN</span>
+            </div>
+          </div>
+          <div class="card-body pt-2">
+            <p class="mb-2">
+              <i class="bi bi-calendar-event me-2"></i>
+              Fecha: 17 de junio, 2026 &nbsp; | &nbsp; Hora: 15:00
+            </p>
+            <p class="mb-3">
+              <i class="bi bi-geo-alt me-2"></i>
+              Sede: BC Place, Canadá
+            </p>
+            <a href="votar.html" class="btn btn-outline-primary w-100 fw-semibold">VOTAR</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Partido 5 -->
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm partido-card">
+          <div class="card-header text-center border-0 py-3">
+            <div class="d-flex justify-content-between align-items-center px-3 partido-header">
+              <span class="fw-bold text-uppercase text-light">ESPAÑA</span>
+              <span class="vs-icon">VS</span>
+              <span class="fw-bold text-uppercase text-light">ITALIA</span>
+            </div>
+          </div>
+          <div class="card-body pt-2">
+            <p class="mb-2">
+              <i class="bi bi-calendar-event me-2"></i>
+              Fecha: 18 de junio, 2026 &nbsp; | &nbsp; Hora: 21:00
+            </p>
+            <p class="mb-3">
+              <i class="bi bi-geo-alt me-2"></i>
+              Sede: AT&T Stadium, USA
+            </p>
+            <a href="votar.html" class="btn btn-outline-primary w-100 fw-semibold">VOTAR</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Partido 6 -->
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm partido-card">
+          <div class="card-header text-center border-0 py-3">
+            <div class="d-flex justify-content-between align-items-center px-3 partido-header">
+              <span class="fw-bold text-uppercase text-light">URUGUAY</span>
+              <span class="vs-icon">VS</span>
+              <span class="fw-bold text-uppercase text-light">COREA DEL SUR</span>
+            </div>
+          </div>
+          <div class="card-body pt-2">
+            <p class="mb-2">
+              <i class="bi bi-calendar-event me-2"></i>
+              Fecha: 19 de junio, 2026 &nbsp; | &nbsp; Hora: 16:00
+            </p>
+            <p class="mb-3">
+              <i class="bi bi-geo-alt me-2"></i>
+              Sede: Arrowhead Stadium, USA
+            </p>
+            <a href="votar.html" class="btn btn-outline-primary w-100 fw-semibold">VOTAR</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- PAGINACIÓN -->
+<nav class="pt-4">
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled">
+      <a class="page-link">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
+
+  </main>
+
+
+		<div id="pie"></div>
+
+<!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<!-- Script personal -->
+<script src="js/script.js"></script>
+
+	</body>
+</html>

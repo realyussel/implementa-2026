@@ -1,0 +1,187 @@
+:root {
+  --color-primary: #0d6efd;
+  --color-secondary: #198754;
+  --color-dark: #212529;
+  --color-accent: #dc3545;
+  --color-light: #f8f9fa;
+  --color-gold: #f4c430;
+}
+
+/* Personalizar botón primary */
+.btn-outline-primary
+{
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+.btn-primary {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+/* Personalizar botón secondary */
+.btn-outline-secondary
+{
+  color: var(--color-secondary);
+  border-color: var(--color-secondary);
+}
+.btn-outline-secondary:hover {
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
+}
+.btn-outline-secondary:hover .bi{
+  color: white;
+}
+.btn-secondary {
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
+}
+
+.btn-outline-dark
+{
+  color: var(--color-dark);
+  border-color: var(--color-dark);
+}
+.btn-outline-dark:hover {
+  background-color: var(--color-dark);
+  border-color: var(--color-dark);
+}
+.btn-dark {
+  background-color: var(--color-dark);
+  border-color: var(--color-dark);
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--color-dark);
+}
+
+.btn-outline-secondary,
+.hero {
+  background-color: var(--color-light);
+}
+
+.logo-box {
+  width: 55px;
+  height: 55px;
+  overflow: hidden;
+}
+
+.logo-mundial {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.logo-gris {
+  filter: grayscale(100%);
+  opacity: 0.45;
+}
+
+.section-heading {
+  position: relative;
+}
+
+.section-heading::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  right: 20%;
+  height: 1px;
+  background-color: var(--color-secondary);
+  transform: translateY(-50%);
+}
+
+.section-heading h2 {
+  z-index: 1;
+}
+
+.card-header {
+  background-image: url("../img/bg.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100% auto; 
+}
+
+.card-partido {
+  border-left: 6px solid var(--color-secondary);
+}
+
+.btn-local {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.btn-empate {
+  background-color: var(--color-gold);
+  color: var(--color-dark);
+}
+
+.btn-visitante {
+  background-color: var(--color-accent);
+  color: white;
+}
+
+.progress-local {
+  background-color: var(--color-primary);
+}
+
+.progress-empate {
+  background-color: var(--color-gold);
+}
+
+.progress-visitante {
+  background-color: var(--color-accent);
+}
+
+.stat-card {
+  background-color: white;
+  border-radius: 14px;
+  padding: 20px;
+  border-top: 5px solid var(--color-primary);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.footer {
+  background-color: var(--color-dark);
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+.bi {
+	font-size: 1.2rem;
+	color: var(--color-secondary);
+}
+.vs-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border: 2px solid white;
+  color: white;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.vote-card {
+  cursor: pointer;
+  border: 1px solid #ced4da;
+  transition: all 0.2s ease-in-out;
+}
+
+.vote-card:hover {
+  border-color: #212529;
+  transform: translateY(-2px);
+}
+
+.vote-card.selected {
+  border: 2px solid var(--color-primary);
+  background-color: rgba(13, 110, 253, 0.08);
+}
+
+.vote-img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}

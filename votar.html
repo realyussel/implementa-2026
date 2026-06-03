@@ -1,0 +1,262 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Predicciones Mundial 2026</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css" >
+	<link rel="stylesheet" href="css/icons/bootstrap-icons.min.css">
+	<link rel="stylesheet" href="css/style.css?v=7"> <!-- Estilo personal -->
+
+</head>
+	<body>
+		<div id="menu"></div>
+
+<main class="container pt-4">
+
+  <!-- Título -->
+  <section class="text-center mb-4">
+    <h1 class="fw-bold text-uppercase fs-3">Vota por tu resultado</h1>
+    <p class="mb-0">
+      Elige quién crees que ganará este partido. Tu voto se sumará a la opinión<br>
+      de la comunidad y podrás ver los resultados.
+    </p>
+  </section>
+
+  <hr class="mb-4">
+
+  <div class="row g-4">
+
+    <!-- Columna principal -->
+    <div class="col-lg-8">
+
+      <section class="card hero border-secondary-subtle shadow-sm">
+        <div class="card-body p-4">
+
+          <!-- Botón volver -->
+          <div class="mb-4">
+            <a href="partidos.html" class="btn btn-outline-secondary btn-sm fw-semibold">
+              <i class="bi bi-arrow-left"></i> Volver a Partidos
+            </a>
+          </div>
+
+          <!-- Datos rápidos del partido -->
+          <div class="text-center mb-4">
+            <p class="mb-2">
+              <i class="bi bi-calendar-event me-2"></i>
+              12 de junio, 2026
+              <span class="mx-2">|</span>
+              17:00 hrs
+            </p>
+
+            <p class="mb-0">
+              <i class="bi bi-geo-alt me-2"></i>
+              SoFi Stadium, Los Ángeles, USA
+            </p>
+          </div>
+
+          <!-- Equipos -->
+          <div class="row align-items-center text-center mb-4">
+            <div class="col-5">
+              <div class="team-logo mx-auto mb-2">
+                <img src="img/banderas/MEX.png" alt="México" class="img-fluid">
+              </div>
+              <h2 class="fs-5 fw-bold text-uppercase">México</h2>
+            </div>
+
+            <div class="col-2">
+              <span class="fw-bold fs-2">VS</span>
+            </div>
+
+            <div class="col-5">
+              <div class="team-logo mx-auto mb-2">
+                <img src="img/banderas/CAN.png" alt="Canadá" class="img-fluid">
+              </div>
+              <h2 class="fs-5 fw-bold text-uppercase">Canadá</h2>
+            </div>
+          </div>
+
+          <hr>
+
+          <!-- Pregunta -->
+          <div class="text-center mb-4">
+            <h3 class="fs-5 fw-bold">¿Quién crees que ganará?</h3>
+            <p class="mb-0">Selecciona una opción para votar.</p>
+          </div>
+
+          <!-- Opciones de voto -->
+<div class="row g-3 text-center">
+
+  <!-- México -->
+  <div class="col-md-4">
+    <div class="card h-100 vote-card" data-voto="votoMexico">
+      <div class="card-body">
+
+        <div class="form-check d-flex justify-content-center mb-3">
+          <input class="form-check-input" type="radio" name="voto" id="votoMexico" value="mexico">
+        </div>
+
+        <img src="img/equipo.webp" alt="México" class="vote-img mb-3">
+
+        <h4 class="fs-6 fw-bold">México</h4>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Empate -->
+  <div class="col-md-4">
+    <div class="card h-100 vote-card" data-voto="votoEmpate">
+      <div class="card-body">
+
+        <div class="form-check d-flex justify-content-center mb-3">
+          <input class="form-check-input" type="radio" name="voto" id="votoEmpate" value="empate">
+        </div>
+
+        <img src="img/empate.webp" alt="Empate" class="vote-img mb-3">
+
+        <h4 class="fs-6 fw-bold">Empate</h4>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Canadá -->
+  <div class="col-md-4">
+    <div class="card h-100 vote-card" data-voto="votoCanada">
+      <div class="card-body">
+
+        <div class="form-check d-flex justify-content-center mb-3">
+          <input class="form-check-input" type="radio" name="voto" id="votoCanada" value="canada">
+        </div>
+
+        <img src="img/equipo.webp" alt="Canadá" class="vote-img mb-3">
+
+        <h4 class="fs-6 fw-bold">Canadá</h4>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+          <!-- Confirmar voto -->
+          <div class="text-center mt-4">
+            <button class="btn btn-secondary px-5 fw-semibold" disabled>
+              Confirmar voto
+            </button>
+          </div>
+
+          <!-- Aviso -->
+          <div class="text-center mt-4 small">
+            <i class="bi bi-lock me-2"></i>
+            Tu voto es anónimo y ayuda a generar las predicciones de la comunidad.
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Columna lateral -->
+    <div class="col-lg-4">
+
+      <!-- Información del partido -->
+      <section class="card border-secondary-subtle shadow-sm mb-4">
+        <div class="card-body p-4">
+          <h2 class="fs-5 fw-bold text-uppercase mb-4">
+            Información del partido
+          </h2>
+
+          <div class="d-flex gap-3 mb-3">
+            <i class="bi bi-calendar-event fs-4"></i>
+            <div>
+              <p class="fw-bold mb-0">Fecha</p>
+              <p class="mb-0">12 de junio, 2026</p>
+            </div>
+          </div>
+
+          <div class="d-flex gap-3 mb-3">
+            <i class="bi bi-clock fs-4"></i>
+            <div>
+              <p class="fw-bold mb-0">Hora</p>
+              <p class="mb-0">17:00 hrs</p>
+            </div>
+          </div>
+
+          <div class="d-flex gap-3 mb-3">
+            <i class="bi bi-geo-alt fs-4"></i>
+            <div>
+              <p class="fw-bold mb-0">Sede</p>
+              <p class="mb-0">SoFi Stadium, Los Ángeles, USA</p>
+            </div>
+          </div>
+
+          <div class="d-flex gap-3">
+            <i class="bi bi-trophy fs-4"></i>
+            <div>
+              <p class="fw-bold mb-0">Fase</p>
+              <p class="mb-0">Fase de Grupos - Grupo A</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cómo funciona -->
+      <section class="card border-secondary-subtle shadow-sm">
+        <div class="card-body p-4">
+          <h2 class="fs-5 fw-bold text-uppercase mb-4">
+            ¿Cómo funciona?
+          </h2>
+
+          <div class="d-flex gap-3 mb-4">
+            <span class="step-circle">1</span>
+            <div>
+              <p class="fw-bold mb-1">Elige un partido</p>
+              <p class="mb-0 small">Explora la lista de partidos disponibles.</p>
+            </div>
+          </div>
+
+          <div class="d-flex gap-3 mb-4">
+            <span class="step-circle">2</span>
+            <div>
+              <p class="fw-bold mb-1">Vota tu resultado</p>
+              <p class="mb-0 small">
+                Selecciona quién crees que ganará o si habrá empate.
+              </p>
+            </div>
+          </div>
+
+          <div class="d-flex gap-3">
+            <span class="step-circle">3</span>
+            <div>
+              <p class="fw-bold mb-1">Consulta los resultados</p>
+              <p class="mb-0 small">
+                Revisa los porcentajes generados por la comunidad.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
+  </div>
+
+</main>
+
+		<div id="pie"></div>
+
+		<!-- jQuery -->
+  		<script src="js/jquery-3.7.1.min.js"></script>
+
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.bundle.min.js"></script>
+
+		<!-- Script personal -->
+		<script src="js/script.js"></script>
+		<script src="js/votar.js"></script>
+	</body>
+</html>

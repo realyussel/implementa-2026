@@ -1,0 +1,664 @@
+## Inicio del video
+
+Antes de comenzar con la explicación de mi proyecto, quiero aclarar algo importante: el sitio que voy a presentar en este video es solo un ejemplo de cómo puede desarrollarse el trabajo.
+
+Mi proyecto se llama Predicciones Mundial 2026, pero eso no significa que todos deban hacer exactamente el mismo tipo de sitio. Cada alumno puede proponer una idea diferente, de acuerdo con sus gustos, intereses o creatividad.
+
+La única condición es que el proyecto tenga relación con el Mundial de Fútbol de la FIFA 2026.
+
+Por ejemplo, algunos pueden desarrollar un sitio informativo sobre el Mundial, una guía para aficionados, una página sobre las sedes, una fan page de una selección, un sitio de estadísticas, una página de noticias, una trivia, una galería, una agenda de partidos o cualquier otra idea relacionada con este evento.
+
+Es decir, no todos deben hacer el mismo sitio. Lo importante es que cada proyecto tenga una idea clara, una estructura ordenada, mínimo cinco páginas o secciones, uso de las tecnologías solicitadas y evidencias del proceso de desarrollo.
+
+En mi caso, voy a explicar un sitio de predicciones donde los visitantes pueden votar por quién creen que ganará diferentes partidos del Mundial 2026 y después ver resultados simulados de la comunidad.
+
+Es importante aclarar que estas predicciones no representan resultados oficiales. Son porcentajes generados para simular la opinión de una comunidad de usuarios.
+
+Para desarrollar este proyecto utilizaré:
+
+* HTML
+* CSS
+* Bootstrap
+* JavaScript
+* jQuery
+* Git
+* GitHub
+* GitHub Pages
+
+Además, el proyecto no solamente se evaluará por el resultado final, sino también por el proceso de desarrollo. Por eso, dentro del repositorio incluiré una carpeta llamada `desarrollo`, donde se guardarán evidencias como capturas de los wireframes, capturas del mockup o la presentación utilizada para planear el diseño del sitio.
+
+---
+
+## Presentación de wireframes y mockup
+
+Antes de empezar a programar, voy a mostrar brevemente la planeación visual del sitio.
+
+Vamos a diseñar los wireframes. Un wireframe es un boceto simple de la estructura del sitio. No se trata todavía de colores ni imágenes finales, sino de decidir dónde irá el menú, el título, las secciones, las tarjetas, los botones y el contenido.
+
+En esta fase no es necesario usar herramientas avanzadas ni hacer un diseño perfecto. Como se trata de wireframes, pueden elaborarse con bocetos a papel y lápiz. También pueden usarse herramientas simples como draw.io o PowerPoint.
+
+Aquí se pueden observar los wireframes o bocetos iniciales. Mi sitio estará dividido en cinco páginas principales:
+
+```text
+index.php
+partidos.php
+votar.php
+resultados.php
+estadisticas.php
+```
+
+Primero, en el wireframe de **Inicio**, se muestra la portada del sitio. Aquí irá el nombre del proyecto, una breve explicación y un botón para entrar a la sección de partidos.
+
+Después, en el wireframe de **Partidos**, se muestran tarjetas con los partidos disponibles. Cada tarjeta incluirá los nombres de los equipos, la fecha, la sede y un botón para votar.
+
+En el wireframe de **Votar**, se muestra el formulario o bloque de votación. El usuario podrá elegir una de tres opciones: equipo local, empate o equipo visitante.
+
+En el wireframe de **Resultados**, se muestra cómo aparecerán los porcentajes de votación. Estos resultados podrán representarse mediante barras de progreso, tarjetas o tablas.
+
+Finalmente, en el wireframe de **Estadísticas**, se muestra una sección con ranking de selecciones favoritas, datos curiosos del Mundial y una explicación de que los resultados son opiniones de la comunidad.
+
+Después de los wireframes, también se puede mostrar el mockup visual. A diferencia del wireframe, el mockup ya muestra la apariencia visual del sitio. Aquí sí deben definirse colores, tipografías, imágenes, botones, fondos y estilo general.
+
+Para esta fase pueden usar herramientas como Canva, Figma o PowerPoint. No es obligatorio que el mockup sea interactivo, pero sí debe permitir ver cómo se espera que luzca el sitio antes de programarlo.
+
+Estas evidencias estarán guardadas dentro de la carpeta:
+
+```text
+desarrollo/
+```
+
+Por ejemplo:
+
+```text
+desarrollo/
+├── wireframes.png
+├── mockup.png
+└── presentacion-mockup.pdf
+```
+
+Esta carpeta sirve para comprobar que sí se realizó una etapa de planeación y diseño antes de programar.
+
+---
+
+## Estructura de archivos del proyecto
+
+La estructura del proyecto será la siguiente:
+
+```text
+mundial-2026/
+├── index.php
+├── partidos.php
+├── votar.php
+├── resultados.php
+├── estadisticas.php
+├── css/
+│   └── styles.css
+├── js/
+│   └── script.js
+├── img/
+│   └── imagenes-del-sitio
+├── desarrollo/
+│   ├── capturas-wireframes
+│   └── capturas-mockup
+├── plantilla/
+│   ├── menu.html
+│   └── pie.html
+└── README.md
+```
+
+Si ya saben usar CMD, PowerShell es parecido porque también permite escribir comandos para crear carpetas, crear archivos y moverse entre directorios.
+
+La diferencia es que PowerShell es una terminal más moderna y permite hacer varias tareas de forma más directa.
+
+Para abrir PowerShell en Windows, pueden presionar la tecla de Windows, escribir **PowerShell** y abrir la aplicación.
+
+Primero debemos ubicarnos en la carpeta donde queremos crear el proyecto.
+
+```powershell
+cd Documents
+```
+
+Después podemos crear las carpetas del proyecto:
+
+```powershell
+mkdir css, js, img, desarrollo, plantilla
+```
+
+Luego podemos crear varios archivos:
+
+```powershell
+New-Item index.php, partidos.php, votar.php, resultados.php, estadisticas.php, README.md -ItemType File
+```
+
+Finalmente, creamos los archivos dentro de las carpetas correspondientes:
+
+```powershell
+New-Item css/styles.css, js/script.js -ItemType File
+New-Item plantilla/menu.html, plantilla/pie.html -ItemType File
+```
+
+Con esto ya tenemos una estructura inicial para el proyecto web, lista para comenzar a trabajar con HTML, CSS y JavaScript.
+
+El archivo `index.php` será la página principal.
+
+El archivo `partidos.php` mostrará la lista de partidos disponibles.
+
+El archivo `votar.php` permitirá que el visitante seleccione quién cree que ganará.
+
+El archivo `resultados.php` mostrará los porcentajes de votación de la comunidad.
+
+El archivo `estadisticas.php` mostrará rankings, datos curiosos y explicaciones adicionales.
+
+La carpeta `css` contendrá el archivo `styles.css`, donde se guardarán los estilos personalizados del sitio.
+
+La carpeta `js` contendrá el archivo `script.js`, donde se programará la interacción con JavaScript y jQuery.
+
+La carpeta `img` contendrá las imágenes utilizadas en el sitio.
+
+La carpeta `desarrollo` contendrá evidencias del proceso de diseño, como capturas de wireframes, mockups o presentaciones.
+
+El archivo `README.md` explicará el propósito del proyecto, sus secciones, tecnologías utilizadas, autor y enlace publicado en GitHub Pages.
+
+Además de las carpetas principales, inclui una carpeta llamada **plantilla**.
+
+Esta carpeta contendrá fragmentos de código HTML reutilizables, es decir, partes del sitio que se repiten en varias páginas. Por ejemplo, el menú de navegación y el pie de página.
+
+La idea es evitar copiar y pegar el mismo código en cada archivo. En lugar de eso, crearé archivos como:
+
+```text
+plantilla/
+├── menu.html
+└── pie.html
+```
+
+Después, usando jQuery, cargaré automáticamente esos archivos dentro de cada página.
+
+Por ejemplo, en mis archivos HTML puedo tener contenedores como:
+
+```html
+<div id="menu"></div>
+
+<!-- contenido de la página -->
+
+<div id="footer"></div>
+```
+
+Y con jQuery cargar el contenido de los archivos de plantilla:
+
+```javascript
+$("#menu").load("plantilla/menu.html");
+$("#footer").load("plantilla/footer.html");
+```
+
+De esta forma, si necesito modificar el menú o el pie de página, solamente tendré que cambiar un archivo dentro de la carpeta **plantilla**, y el cambio aparecerá automáticamente en todas las páginas del sitio.
+
+Esta técnica ayuda a mantener el proyecto más organizado, facilita el mantenimiento del código y evita duplicar información en múltiples archivos.
+
+---
+
+## Configuración inicial con Git
+
+Para comenzar el desarrollo, primero creo la carpeta del proyecto:
+
+```bash
+mkdir mundial-2026
+cd mundial-2026
+```
+
+Después creo los archivos y carpetas principales:
+
+```bash
+mkdir css js img desarrollo
+touch index.php partidos.php votar.php resultados.php estadisticas.php README.md
+touch css/styles.css
+touch js/script.js
+```
+
+Dentro de la carpeta `desarrollo`, también puedo crear subcarpetas para organizar mejor las evidencias:
+
+```bash
+mkdir desarrollo/wireframes desarrollo/mockup
+```
+
+Después inicializo Git:
+
+```bash
+git init
+```
+
+Con esto, la carpeta se convierte en un repositorio local.
+
+Puedo revisar el estado del proyecto con:
+
+```bash
+git status
+```
+
+Este comando sirve para ver qué archivos han sido creados o modificados.
+
+---
+
+## Creación del repositorio en GitHub
+
+Después crearé un repositorio en GitHub con un nombre relacionado con el proyecto, por ejemplo:
+
+```text
+mundial-2026
+```
+
+Una vez creado el repositorio, conecto mi proyecto local con GitHub usando un comando como este:
+
+```bash
+git remote add origin https://github.com/usuario/mundial-2026.git
+```
+
+Después verifico que la conexión exista:
+
+```bash
+git remote -v
+```
+
+Con esto, el proyecto local queda conectado con el repositorio remoto.
+
+---
+
+## Primer commit: estructura inicial del sitio
+
+El primer commit será para guardar la estructura inicial del proyecto.
+
+En esta etapa ya deben existir los archivos:
+
+```text
+index.php
+partidos.php
+votar.php
+resultados.php
+estadisticas.php
+README.md
+css/styles.css
+js/script.js
+img/
+desarrollo/
+```
+
+Después ejecuto:
+
+```bash
+git add .
+git commit -m "Crea estructura inicial del sitio"
+```
+
+Este commit demuestra que el proyecto comenzó de manera ordenada, con archivos separados para cada página y carpetas específicas para estilos, scripts, imágenes y evidencias de desarrollo.
+
+---
+
+## Segundo commit: agrega páginas principales
+
+En el segundo commit trabajaré la estructura base de cada página.
+
+En `index.php` agregaré la presentación del proyecto **Predicciones Mundial 2026**, una breve explicación y un botón para ir a la página de partidos.
+
+En `partidos.php` agregaré las tarjetas de los partidos. Cada tarjeta mostrará equipos, fecha, sede y un botón para votar.
+
+En `votar.php` agregaré las opciones de votación: equipo local, empate y equipo visitante.
+
+En `resultados.php` agregaré la estructura donde se mostrarán los porcentajes de cada resultado.
+
+En `estadisticas.php` agregaré el espacio para el ranking de selecciones favoritas, datos curiosos y explicación de resultados no oficiales.
+
+Después haré el segundo commit:
+
+```bash
+git add .
+git commit -m "Agrega páginas principales"
+```
+
+Este commit muestra que el proyecto ya tiene las cinco páginas requeridas y que cada una cumple una función dentro del sitio.
+
+---
+
+## Tercer commit: integra Bootstrap y menú responsivo
+
+Después integraré Bootstrap para mejorar la estructura visual del sitio.
+
+Bootstrap me permitirá crear una página responsiva, es decir, que pueda adaptarse a computadora, tablet o celular.
+
+En este proyecto usaré Bootstrap para:
+
+* Crear una barra de navegación.
+* Organizar contenido con contenedores.
+* Usar filas y columnas.
+* Diseñar tarjetas de partidos.
+* Crear botones.
+* Mostrar barras de progreso.
+* Mejorar la presentación de tablas o rankings.
+
+El menú de navegación aparecerá en las páginas principales y tendrá enlaces como:
+
+```text
+Inicio
+Partidos
+Votar
+Resultados
+Estadísticas
+```
+
+De esta forma, el usuario podrá moverse fácilmente entre las distintas páginas del sitio.
+
+Después haré el tercer commit:
+
+```bash
+git add .
+git commit -m "Integra Bootstrap y menú responsivo"
+```
+
+Este commit demuestra que el sitio ya tiene navegación y diseño adaptable.
+
+---
+
+## Cuarto commit: agrega estilos personalizados
+
+Aunque Bootstrap facilita el diseño, también agregaré estilos propios en el archivo:
+
+```text
+css/styles.css
+```
+
+Aquí personalizaré el aspecto visual de **Predicciones Mundial 2026**.
+
+Puedo modificar:
+
+* Colores principales.
+* Fondos.
+* Tipografía.
+* Tamaño de títulos.
+* Diseño de tarjetas.
+* Botones de votación.
+* Separación entre secciones.
+* Barras de resultados.
+* Ranking de selecciones.
+* Pie de página.
+
+La intención es que el sitio tenga una identidad propia relacionada con el Mundial, el fútbol y la participación de los visitantes.
+
+Después haré el cuarto commit:
+
+```bash
+git add .
+git commit -m "Agrega estilos personalizados"
+```
+
+Este commit demuestra que el sitio no depende solamente de Bootstrap, sino que también tiene diseño personalizado.
+
+---
+
+## Quinto commit: agrega función interactiva con jQuery
+
+La parte interactiva del proyecto se programará en:
+
+```text
+js/script.js
+```
+
+La función principal será la votación.
+
+En la página `votar.php`, el usuario podrá seleccionar una opción:
+
+```text
+Equipo local
+Empate
+Equipo visitante
+```
+
+Al hacer clic en una opción, jQuery mostrará los porcentajes estimados mediante barras de progreso.
+
+Por ejemplo:
+
+```text
+México: 55%
+Empate: 25%
+Canadá: 20%
+```
+
+Estos datos pueden ser simulados, porque el objetivo es demostrar el funcionamiento de una encuesta web.
+
+También puedo agregar un botón para mostrar un dato curioso aleatorio del Mundial.
+
+Por ejemplo, al presionar el botón, se mostrará una frase relacionada con selecciones, sedes, historia del Mundial o países anfitriones.
+
+Después haré el quinto commit:
+
+```bash
+git add .
+git commit -m "Agrega función interactiva con jQuery"
+```
+
+Este commit es importante porque demuestra que el sitio no es solamente informativo, sino también interactivo.
+
+---
+
+## Sexto commit: agrega evidencias de desarrollo y completa README
+
+En esta etapa agregaré o revisaré la carpeta:
+
+```text
+desarrollo/
+```
+
+Ahí deben estar las evidencias del proceso de diseño. Por ejemplo:
+
+```text
+desarrollo/
+├── wireframes/
+│   └── captura-wireframe-inicio.png
+├── mockup/
+│   └── captura-mockup-principal.png
+```
+
+También se puede incluir una presentación en PDF o PowerPoint con el mockup del sitio.
+
+La finalidad de esta carpeta es que el maestro pueda comprobar que el alumno no solamente programó la página final, sino que también realizó una etapa previa de planeación visual.
+
+Además, completaré el archivo `README.md` con la información del proyecto:
+
+```text
+Nombre del proyecto: Predicciones Mundial 2026
+Propósito del sitio
+Público objetivo
+Descripción general
+Secciones del sitio
+Función interactiva con jQuery
+Tecnologías utilizadas
+Autor
+Enlace al sitio publicado
+```
+
+Después haré el sexto commit:
+
+```bash
+git add .
+git commit -m "Agrega evidencias de desarrollo y completa README"
+```
+
+Este commit permite revisar tanto el producto final como el proceso seguido para construirlo.
+
+---
+
+## Séptimo commit: corrige detalles finales
+
+Antes de publicar, revisaré que todo funcione correctamente.
+
+Debo comprobar:
+
+* Que el menú funcione en todas las páginas.
+* Que los enlaces entre páginas sean correctos.
+* Que los estilos de `css/styles.css` carguen bien.
+* Que el archivo `js/script.js` funcione correctamente.
+* Que las imágenes estén en la carpeta `img`.
+* Que las evidencias estén en la carpeta `desarrollo`.
+* Que el README esté completo.
+* Que no haya textos de prueba sin corregir.
+* Que el sitio se vea bien en diferentes tamaños de pantalla.
+
+Después haré el último commit:
+
+```bash
+git add .
+git commit -m "Corrige detalles finales del proyecto"
+```
+
+Este commit deja el proyecto listo para subirse y publicarse.
+
+---
+
+## Lista de commits requeridos
+
+El repositorio debe mostrar un historial de commits como este:
+
+```text
+1. Crea estructura inicial del sitio
+2. Agrega páginas principales
+3. Integra Bootstrap y menú responsivo
+4. Agrega estilos personalizados
+5. Agrega función interactiva con jQuery
+6. Agrega evidencias de desarrollo y completa README
+7. Corrige detalles finales del proyecto
+```
+
+Estos commits deben verse en GitHub, no solamente en la computadora del alumno.
+
+Aunque los commits se hagan localmente, al final deben subirse con:
+
+```bash
+git push
+```
+
+Cuando se suben a GitHub, el maestro puede revisar el historial completo de commits.
+
+---
+
+## Subir el proyecto a GitHub
+
+Cuando el proyecto ya tenga sus commits, lo subiré a GitHub.
+
+Primero aseguro que la rama principal se llame `main`:
+
+```bash
+git branch -M main
+```
+
+Después subo el proyecto:
+
+```bash
+git push -u origin main
+```
+
+Con esto, el repositorio en GitHub deberá mostrar:
+
+```text
+index.php
+partidos.php
+votar.php
+resultados.php
+estadisticas.php
+css/
+js/
+img/
+desarrollo/
+README.md
+```
+
+También deberá mostrar el historial de commits realizados durante el desarrollo.
+
+---
+
+## Publicación en GitHub Pages
+
+Para publicar el sitio, usaré GitHub Pages.
+
+Primero entro al repositorio en GitHub.
+
+Después selecciono la pestaña **Settings**.
+
+En el menú lateral busco la opción **Pages**.
+
+En la sección de publicación, selecciono como fuente la rama:
+
+```text
+main
+```
+
+Después selecciono la carpeta raíz del proyecto:
+
+```text
+/root
+```
+
+o la opción equivalente que indique que se publicará desde la raíz del repositorio.
+
+Luego guardo la configuración.
+
+GitHub Pages generará un enlace público parecido a:
+
+```text
+https://usuario.github.io/mundial-2026/
+```
+
+Ese enlace se debe copiar y colocar en el archivo `README.md`, en el apartado:
+
+```text
+Enlace al sitio publicado
+```
+
+Después de agregar el enlace al README, hago un commit final si es necesario:
+
+```bash
+git add README.md
+git commit -m "Agrega enlace del sitio publicado"
+git push
+```
+
+Antes de entregar, debo abrir el enlace de GitHub Pages y comprobar que el sitio funcione.
+
+Debo revisar:
+
+* Que cargue `index.php`.
+* Que el menú lleve a `partidos.php`, `votar.php`, `resultados.php` y `estadisticas.php`.
+* Que el CSS se aplique correctamente.
+* Que el JavaScript y jQuery funcionen.
+* Que las imágenes carguen desde la carpeta `img`.
+* Que no existan rutas rotas.
+* Que el README tenga el enlace publicado.
+* Que la carpeta `desarrollo` esté visible en el repositorio.
+
+Si el sitio no carga, debo revisar que el archivo principal se llame exactamente:
+
+```text
+index.php
+```
+
+Si no cargan estilos o imágenes, debo revisar que las rutas estén bien escritas. Por ejemplo:
+
+```html
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/script.js"></script>
+<img src="img/nombre-imagen.png" alt="Descripción">
+```
+
+---
+
+## Cierre del video
+
+En conclusión, El proyecto no se evalúa solamente por la página terminada, sino por todo el proceso:
+
+* Planeación.
+* Wireframes.
+* Mockup.
+* Organización de archivos.
+* Commits en Git.
+* Repositorio en GitHub.
+* Carpeta `desarrollo` con evidencias.
+* Función interactiva con jQuery.
+* Publicación final en GitHub Pages.
+
+Un buen proyecto web no es únicamente el que se ve bien. También debe estar bien planeado, bien organizado, correctamente versionado y publicado para que pueda revisarse en línea.

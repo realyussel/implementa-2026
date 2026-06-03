@@ -1,0 +1,315 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Predicciones Mundial 2026</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css" > <!-- Bootstrap -->
+	<link rel="stylesheet" href="css/icons/bootstrap-icons.min.css"> <!-- Bootstrap Icons -->
+	<link rel="stylesheet" href="css/style.css?v=7"> <!-- Estilos -->
+
+</head>
+	<body>
+		<div id="menu"></div>
+
+
+<main class="container py-4">
+
+  <!-- FILTROS -->
+  <section class="card hero shadow-sm border-0 mb-4">
+    <div class="card-body">
+      <div class="row g-3">
+
+        <div class="col-md-4">
+          <div class="input-group">
+            <span class="input-group-text bg-white">
+              <i class="bi bi-search"></i>
+            </span>
+            <input type="text" class="form-control" placeholder="Buscar equipo o partido...">
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="input-group">
+            <span class="input-group-text bg-white">
+              <i class="bi bi-people"></i>
+            </span>
+            <select class="form-select">
+              <option selected>Todos los grupos</option>
+              <option>Grupo A</option>
+              <option>Grupo B</option>
+              <option>Grupo C</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="input-group">
+            <span class="input-group-text bg-white">
+              <i class="bi bi-calendar-event"></i>
+            </span>
+            <select class="form-select">
+              <option selected>Todas las fases</option>
+              <option>Fase de grupos</option>
+              <option>Dieciseisavos</option>
+              <option>Octavos de final</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="col-md-2 ms-md-auto">
+          <button class="btn btn-outline-secondary w-100">
+            <i class="bi bi-arrow-clockwise me-2"></i>
+            Actualizar
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TÍTULO DE SECCIÓN -->
+  <div class="d-flex align-items-center justify-content-center gap-3 my-4">
+    <div class="border-top flex-grow-1"></div>
+    <h2 class="fw-bold fs-5 text-uppercase mb-0 text-center">
+      Resultados por partido
+    </h2>
+    <div class="border-top flex-grow-1"></div>
+  </div>
+
+  <!-- RESULTADOS POR PARTIDO -->
+  <section class="row g-4">
+
+    <!-- Partido 1 -->
+    <div class="col-md-6">
+      <div class="card h-100 shadow-sm partido-card">
+        <div class="card-header text-center border-0 py-3">
+          <div class="d-flex justify-content-between align-items-center px-3 partido-header">
+            <span class="fw-bold text-uppercase text-light">México</span>
+            <span class="vs-icon">VS</span>
+            <span class="fw-bold text-uppercase text-light">Canadá</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <p class="small mb-1">
+            <i class="bi bi-calendar-event me-2"></i>
+            11 de junio, 2026
+            <span class="mx-2">|</span>
+            17:00 hrs
+          </p>
+
+          <p class="small mb-3">
+            <i class="bi bi-geo-alt me-2"></i>
+            Estadio Azteca, México
+          </p>
+
+          <div class="resultado-linea">
+            <span>México</span>
+            <div class="progress flex-grow-1">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 55%;"></div>
+            </div>
+            <strong>55%</strong>
+          </div>
+
+          <div class="resultado-linea">
+            <span>Empate</span>
+            <div class="progress flex-grow-1">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width: 25%;"></div>
+            </div>
+            <strong>25%</strong>
+          </div>
+
+          <div class="resultado-linea">
+            <span>Canadá</span>
+            <div class="progress flex-grow-1">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 20%;"></div>
+            </div>
+            <strong>20%</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Partido 2 -->
+    <div class="col-md-6">
+      <div class="card h-100 shadow-sm partido-card">
+        <div class="card-header text-center border-0 py-3">
+          <div class="d-flex justify-content-between align-items-center px-3 partido-header">
+            <span class="fw-bold text-uppercase text-light">USA</span>
+            <span class="vs-icon">VS</span>
+            <span class="fw-bold text-uppercase text-light">Brasil</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <p class="small mb-1">
+            <i class="bi bi-calendar-event me-2"></i>
+            12 de junio, 2026
+            <span class="mx-2">|</span>
+            19:00 hrs
+          </p>
+
+          <p class="small mb-3">
+            <i class="bi bi-geo-alt me-2"></i>
+            SoFi Stadium, USA
+          </p>
+
+          <div class="resultado-linea">
+            <span>USA</span>
+            <div class="progress flex-grow-1">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 45%;"></div>
+            </div>
+            <strong>45%</strong>
+          </div>
+
+          <div class="resultado-linea">
+            <span>Empate</span>
+            <div class="progress flex-grow-1">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width: 30%;"></div>
+            </div>
+            <strong>30%</strong>
+          </div>
+
+          <div class="resultado-linea">
+            <span>Brasil</span>
+            <div class="progress flex-grow-1">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 25%;"></div>
+            </div>
+            <strong>25%</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Partido 3 -->
+    <div class="col-md-6">
+      <div class="card h-100 shadow-sm partido-card">
+        <div class="card-header text-center border-0 py-3">
+          <div class="d-flex justify-content-between align-items-center px-3 partido-header">
+            <span class="fw-bold text-uppercase text-light">Argentina</span>
+            <span class="vs-icon">VS</span>
+            <span class="fw-bold text-uppercase text-light">Colombia</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <p class="small mb-1">
+            <i class="bi bi-calendar-event me-2"></i>
+            16 de junio, 2026
+            <span class="mx-2">|</span>
+            18:00 hrs
+          </p>
+
+          <p class="small mb-3">
+            <i class="bi bi-geo-alt me-2"></i>
+            MetLife Stadium, USA
+          </p>
+
+          <div class="resultado-linea">
+            <span>Argentina</span>
+            <div class="progress flex-grow-1">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 50%;"></div>
+            </div>
+            <strong>50%</strong>
+          </div>
+
+          <div class="resultado-linea">
+            <span>Empate</span>
+            <div class="progress flex-grow-1">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width: 30%;"></div>
+            </div>
+            <strong>30%</strong>
+          </div>
+
+          <div class="resultado-linea">
+            <span>Colombia</span>
+            <div class="progress flex-grow-1">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 20%;"></div>
+            </div>
+            <strong>20%</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Partido 4 -->
+    <div class="col-md-6">
+      <div class="card h-100 shadow-sm partido-card">
+        <div class="card-header text-center border-0 py-3">
+          <div class="d-flex justify-content-between align-items-center px-3 partido-header">
+            <span class="fw-bold text-uppercase text-light">España</span>
+            <span class="vs-icon">VS</span>
+            <span class="fw-bold text-uppercase text-light">Japón</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <p class="small mb-1">
+            <i class="bi bi-calendar-event me-2"></i>
+            18 de junio, 2026
+            <span class="mx-2">|</span>
+            21:00 hrs
+          </p>
+
+          <p class="small mb-3">
+            <i class="bi bi-geo-alt me-2"></i>
+            AT&amp;T Stadium, USA
+          </p>
+
+<ol class="list-group list-group-numbered">
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">España</div>
+      <div class="progress flex-grow-1">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 50%;"></div>
+      </div>
+    </div>
+    <span class="badge text-bg-primary rounded-pill">50%</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">Empate</div>
+      <div class="progress flex-grow-1">
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width: 30%;"></div>
+      </div>
+    </div>
+    <span class="badge text-bg-secondary rounded-pill">30%</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">Japón</div>
+      <div class="progress flex-grow-1">
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 20%;"></div>
+      </div>
+    </div>
+    <span class="badge text-bg-secondary rounded-pill">20%</span>
+  </li>
+</ol>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- AVISO IMPORTANTE -->
+  <section class="alert alert-warning mt-5 d-flex align-items-center gap-3" role="alert">
+    <i class="bi bi-info-circle-fill fs-2 text-danger"></i>
+    <div>
+      <h4 class="alert-heading">Aviso importante</h4>
+      <p class="mb-0">
+        Los resultados mostrados no son oficiales. Representan opiniones de los visitantes.
+      </p>
+    </div>
+  </section>
+
+</main>
+		<div id="pie"></div>
+		
+  	<script src="js/jquery-3.7.1.min.js"></script> <!-- jQuery -->
+		<script src="js/bootstrap.bundle.min.js"></script> <!-- Bootstrap JS -->
+		<script src="js/script.js"></script> <!-- Scripts -->
+	</body>
+</html>
